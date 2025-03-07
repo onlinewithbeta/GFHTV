@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GFHTV.com</title>
+  <link rel="stylesheet" href="name.css" type="text/css" media="all" />
+</head>
+
+<body>
+  <header>
+    <h1>God's Family House TV (GFHTV)</h1>
+    <button class="toBuy"id="Follow">Follow</button>
+    <button class="toBuy" id="back" onclick="back()">Back</button>
+  </header>
+
+  <main id="main">
+    <h2>The Main </h2>
+
+    <section id="planSection">
+
+      <h3>Category</h3>
+      <!---Photo Section--->
+      <section class="plans">
+        <h4>Photo</h4>
+        <button class="viewButton" onclick="viewPhotos()">View</button>
+      </section>
+
+      <!---Video Section--->
+      <section class="plans">
+        <h4>Video</h4>
+        <button onclick="viewVideo()" class="viewButton">View</button>
+      </section>
+
+
+      <button id="XX" class="discon" type="button">X</button>
+    </section>
+
+  </main>
+
+  <section id="photos">
+    <img style="margin-top:30px" id="" src="" alt="photo1" />
+    <img id="" src="" alt="photo2" />
+    <img id="" src="" alt="photo3" />
+    <img id="" src="" alt="photo4" />
+  </section>
+
+  <section id="videos">
+    <img style="margin-top:30px" id="" src="" alt="video1" />
+    <img id="" src="" alt="videos2" />
+    <img id="" src="" alt="videos3" />
+    <img id="" src="" alt="videos4" />
+  </section>
+
+
+  <footer id="footer">
+    <h3>Follow us on:</h3>
+    <span>
+      <img class="iconss" src="" alt="Facebook" />
+      <img class="iconss" src="" alt="YouTube" />
+      <img class="iconss" src="" alt="Twitter" />
+    </span>
+    <p>
+      &copy; 2023 GFHTV
+    </p>
+    <h3>Contact:</h3>
+    <p>
+      08131846267
+    </p>
+  </footer>
+
+  <script type="text/javascript" charset="utf-8">
+
+    let main = document.getElementById("main");
+    let photos = document.getElementById("photos");
+    let videos = document.getElementById("videos");
+
+
+    function viewVideo() {
+      videos.style = "display:block";
+      main.style = "display:none";
+    }
+
+    function viewPhotos() {
+      photos.style = "display:block";
+      main.style = "display:none";
+    }
+    function back() {
+      videos.style = "display:none";
+      photos.style = "display:none";
+      main.style = "display:block";
+    }
+
+
+    function newFunction() {
+      main.style= "display:block";
+    }
+
+
+  </script>
+
+
+</body>
+</html>
